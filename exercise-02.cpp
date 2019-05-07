@@ -7,7 +7,7 @@ Deskripsi       : Reversing a Word Stack Using Linked List
 */
 
 #include <iostream>
-#include<string.h>
+#include <string.h>
 
 using namespace std;
 
@@ -72,27 +72,31 @@ main()
 {
     List TOP;
     pointer s, pHapus;
-    char kata[maxElmt];
+    char kata[maxElmt], lanjut;
 
     cout<<"=================================================================" <<endl;
     cout<<"Selamat Datang Di Program Pembalik Kata Stack Dengan List Berkait" <<endl;
     cout<<"=================================================================" <<endl <<endl;
 
-    cout<<"Masukan kata yang akan dibalik\t: "; cin>>kata;
-
     createStack(TOP);
 
-    cout<<endl <<"Kata sebelum dibalik\t: ";
-    for (int i=0; i<strlen(kata); i++)
-    {
-        createElmt(s, kata[i]);
-        push(TOP,s);
-    }
+    do{
+        cout<<"Masukan kata yang akan dibalik\t: "; cin>>kata; cout<<endl;
 
-    cout<<endl<<"Kata sesudah dibalik\t: ";
-    for (int i=0; i<strlen(kata); i++)
-    {
-        pop(TOP,pHapus);
-    }
-    cout<<endl;
+        cout<<"Kata sebelum dibalik\t: ";
+        for (int i=0; i<strlen(kata); i++)
+        {
+            createElmt(s, kata[i]);
+            push(TOP,s);
+        }
+        cout<<endl;
+
+        cout<<"Kata sesudah dibalik\t: ";
+        for (int i=0; i<strlen(kata); i++)
+        {
+            pop(TOP,pHapus);
+        }
+        cout<<endl <<endl;
+        cout<<"Anda ingin melanjutkan (Y/N)?\t: "; cin>>lanjut; cout<<endl;
+    }while(lanjut=='Y' || lanjut=='y');
 }

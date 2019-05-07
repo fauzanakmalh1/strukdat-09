@@ -84,7 +84,7 @@ int length(const char* x)
 
 int main()
 {
-    char kata[maxElemen];
+    char kata[maxElemen], lanjut;
 
     cout<<"==========================================================" <<endl;
     cout<<"Selamat Datang Di Program Pembalik Kata Stack Dengan Array" <<endl;
@@ -92,17 +92,20 @@ int main()
 
     createStack(S);
 
-    cout<<"Masukan kata yang akan dibalik\t: "; cin>>kata; cout<<endl;
+    do{
+        cout<<"Masukan kata yang akan dibalik\t: "; cin>>kata; cout<<endl;
 
-    cout<<"Kata sebelum dibalik\t: " <<kata <<endl;
-    cout<<"Kata Setelah dibalik\t: ";
-    for(int i=0;i<length(kata);i++)
-    {
-        push(S,kata[i]);
-    }
-    for(int i=0;i<length(kata);i++)
-    {
-        cout<<pop(S);
-    }
-    cout<<endl;
+        cout<<"Kata sebelum dibalik\t: " <<kata <<endl;
+        cout<<"Kata Setelah dibalik\t: ";
+        for(int i=0; i<length(kata); i++)
+        {
+            push(S,kata[i]);
+        }
+        for(int i=0; i<length(kata); i++)
+        {
+            cout<<pop(S);
+        }
+        cout<<endl <<endl;
+        cout<<"Anda ingin melanjutkan (Y/N)?\t: "; cin>>lanjut; cout<<endl;
+    }while(lanjut=='Y' || lanjut=='y');
 }
