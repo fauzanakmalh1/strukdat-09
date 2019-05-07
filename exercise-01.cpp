@@ -3,7 +3,7 @@ Nama Program    : exercise-01
 Nama            : Fauzan Akmal Hariz
 NPM             : 140810180005
 Tanggal buat    : 07 Mei 2019
-Deskripsi       : Reversing a Word Stack Using Array
+Deskripsi       : Praktikum - Reversing a Word Stack Using Array
 ***************************************************/
 
 #include<iostream>

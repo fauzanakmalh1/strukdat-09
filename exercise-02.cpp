@@ -3,7 +3,7 @@ Nama Program    : exercise-02
 Nama            : Fauzan Akmal Hariz
 NPM             : 140810180005
 Tanggal buat    : 07 Mei 2019
-Deskripsi       : Reversing a Word Stack Using Linked List
+Deskripsi       : Praktikum - Reversing a Word Stack Using Linked List
 *********************************************************/
 
 #include <iostream>
