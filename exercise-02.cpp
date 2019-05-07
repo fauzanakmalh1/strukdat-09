@@ -4,7 +4,7 @@ Nama            : Fauzan Akmal Hariz
 NPM             : 140810180005
 Tanggal buat    : 07 Mei 2019
 Deskripsi       : Reversing a Word Stack Using Linked List
-*/
+*********************************************************/
 
 #include <iostream>
 #include <string.h>
@@ -80,7 +80,8 @@ main()
 
     createStack(TOP);
 
-    do{
+    do
+    {
         cout<<"Masukan kata yang akan dibalik\t: "; cin>>kata; cout<<endl;
 
         cout<<"Kata sebelum dibalik\t: ";
